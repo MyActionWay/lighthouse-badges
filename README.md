@@ -1,7 +1,7 @@
 [![Build Status](https://github.com/emazzotta/lighthouse-badges/workflows/build/badge.svg)](https://github.com/emazzotta/lighthouse-badges/actions)
 [![Code Coverage](https://codecov.io/gh/emazzotta/lighthouse-badges/branch/master/graph/badge.svg)](https://github.com/emazzotta/lighthouse-badges/actions)
-<a title="Explore it" target="_blank" href="https://snyk.io/test/github/sitdisch/lighthouse-badges"><img loading="eager" alt="&nbsp;vulnerabilities pending...&nbsp;"  src="https://img.shields.io/snyk/vulnerabilities/github/sitdisch/lighthouse-badges?cacheSeconds=maxAge&logo=snyk" /></a>
-<a title="Check it out" target="_blank" href="https://github.com/GoogleChrome/lighthouse"><img src="https://img.shields.io/github/package-json/dependency-version/sitdisch/lighthouse-badges/lighthouse?logo=lighthouse" /></a>
+<a title="Explore it" target="_blank" href="https://snyk.io/test/github/myactionway/lighthouse-badges"><img loading="eager" alt="&nbsp;vulnerabilities pending...&nbsp;"  src="https://img.shields.io/snyk/vulnerabilities/github/myactionway/lighthouse-badges?cacheSeconds=maxAge&logo=snyk" /></a>
+<a title="Check it out" target="_blank" href="https://github.com/GoogleChrome/lighthouse"><img src="https://img.shields.io/github/package-json/dependency-version/myactionway/lighthouse-badges/lighthouse?logo=lighthouse" /></a>
 [![NPM downloads](https://img.shields.io/npm/dt/lighthouse-badges?color=blue)](https://www.npmjs.org/package/lighthouse-badges)
 [![NPM version](https://img.shields.io/npm/v/lighthouse-badges.svg)](https://www.npmjs.org/package/lighthouse-badges)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://emanuelemazzotta.com/mit-license) 
