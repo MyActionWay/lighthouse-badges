@@ -8,7 +8,7 @@
 
 # Lighthouse Badges
 
-[![Lighthouse](./assets/img/lighthouse.svg)](https://github.com/GoogleChrome/lighthouse)
+[![Lighthouse](https://raw.githubusercontent.com/emazzotta/lighthouse-badges/master/assets/img/lighthouse.svg)](https://github.com/GoogleChrome/lighthouse)
 
 This package allows you to easily create Lighthouse badges for all Lighthouse categories.  
 Ever wanted to brag about your sites's awesome Lighthouse performance? Then this is the package for you!  
@@ -99,14 +99,14 @@ docker run --rm \
 
 ## Contributing
 
-See [contribution guideline](./CONTRIBUTING.md)
+See [contribution guideline](https://github.com/emazzotta/lighthouse-badges/blob/master/CONTRIBUTING.md)
 
 ## Sponsors
 
 Sponsored by [JetBrains](https://www.jetbrains.com/?from=Lighthouse-Badges)
 
 <a href="https://www.jetbrains.com/?from=Lighthouse-Badges">
-  <img alt="Jetbrains Logo" src="./assets/img/jetbrains.svg" height="100">
+  <img alt="Jetbrains Logo" src="https://raw.githubusercontent.com/emazzotta/lighthouse-badges/master/assets/img/jetbrains.svg" height="100">
 </a>
 
 ## Author

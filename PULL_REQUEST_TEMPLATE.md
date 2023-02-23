@@ -1,4 +1,0 @@
-## Short Description
-
-### Major Changes
-

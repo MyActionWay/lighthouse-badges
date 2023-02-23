@@ -6,68 +6,16 @@
   "bin": {
     "lighthouse-badges": "src/index.js"
   },
-  "scripts": {
-    "clean": "rm -f *.svg *.html",
-    "docker:build": "docker build --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg BUILD_DATE=`date -u +\"%Y-%m-%dT%H:%M:%SZ\"` --build-arg VERSION=latest -t emazzotta/lighthouse-badges .",
-    "docker:system-test:run": "docker run emazzotta/lighthouse-badges /bin/sh -c 'lighthouse-badges -rsu https://google.com && EXEC_PATH=/home/chrome/reports npm run system-test:verify --prefix /home/lighthouse'",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "pre-push": "npm-run-all lint:fix test system-test:full-run",
-    "reinstall": "npm uninstall -g . && npm i -g .",
-    "run:global-installation": "[ -z ${PAGE} ] && PAGE=https://google.com ; lighthouse-badges -rsu ${PAGE}",
-    "run:local-installation": "[ -z ${PAGE} ] && PAGE=https://google.com ; node ./src/index.js -rsu ${PAGE}",
-    "system-test:full-run": "npm-run-all clean reinstall run:global-installation system-test:verify clean",
-    "system-test:light-run": "npm-run-all clean run:local-installation system-test:verify clean",
-    "system-test:start-server": "npx http-server -a 127.0.0.1 -p 8080 &",
-    "system-test:verify": "[ -z ${EXEC_PATH} ] && EXEC_PATH=$PWD ; grep -q '<svg xmlns' ${EXEC_PATH}/*.svg && grep -q '<title>Lighthouse Report</title>' ${EXEC_PATH}/*.html",
-    "test": "jest",
-    "test:related": "jest --findRelatedTests"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint:fix",
-      "npm run test:related"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/emazzotta/lighthouse-badges.git"
   },
   "dependencies": {
     "argparse": "2.0.1",
-    "badge-maker": "^3.3.1",
-    "clui": "^0.3.6",
-    "lighthouse": "^9.6.8",
-    "ramda": "^0.28.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/plugin-transform-runtime": "^7.19.6",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/runtime": "^7.20.13",
-    "babel-jest": "^29.3.1",
-    "eslint": "^8.32.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "husky": "^8.0.3",
-    "jest": "^29.3.1",
-    "lint-staged": "^13.1.0",
-    "npm-run-all": "^4.1.5"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
-    ],
-    "collectCoverage": true,
-    "coverageReporters": [
-      "json",
-      "html"
-    ]
+    "badge-maker": "3.3.1",
+    "clui": "0.3.6",
+    "lighthouse": "9.6.8",
+    "ramda": "0.28.0"
   },
   "author": "Emanuele Mazzotta",
   "license": "MIT"
